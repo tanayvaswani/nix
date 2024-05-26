@@ -5,4 +5,7 @@ let
     z = 3;
   };
 in
-with a; [ x y z ]
+{
+  b = with a; [ x y z ];
+  c = 24;
+}
